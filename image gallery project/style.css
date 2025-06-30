@@ -1,0 +1,103 @@
+body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+p {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+    
+
+    .gallery {
+      display: flex;
+      gap: 10px;
+      padding: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .gallery-img {
+      width: 250px;
+      height: auto;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-img:hover {
+      transform: scale(1.05);
+    }
+
+    .full-img {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.9);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 100;
+      flex-direction: column;
+    }
+
+    .full-img img {
+      max-width: 90%;
+      max-height: 80%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .full-img span {
+      color: white;
+      font-size: 40px;
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      cursor: pointer;
+    }
+
+    .lightbox-controls {
+      position: absolute;
+      bottom: 50px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .lightbox-controls button {
+      background-color: white;
+      border: none;
+      font-size: 24px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .lightbox-controls button:hover {
+      background-color: #ddd;
+    }
+    
+/* For Responsive*/
+    @media (max-width: 768px) 
+    {
+      .gallery-img {
+        width: 100%;
+        max-width: 90%;
+      }
+
+      .lightbox-controls {
+        flex-direction: column;
+        bottom: 20px;
+      }
+    }

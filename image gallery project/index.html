@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<p>Image Gallery</p>
+<div class="gallery">
+  <img src="pic 1.jpg" alt="Image 1" class="gallery-img">
+  <img src="pic 2.jpg" alt="Image 2" class="gallery-img">
+  <img src="pic 3.jpg" alt="Image 3" class="gallery-img">
+  <img src="pic 4.jpg" alt="Image 4" class="gallery-img">
+  <img src="pic 5.jpg" alt="Image 5" class="gallery-img">
+  <img src="pic 6.jpg" alt="Image 3" class="gallery-img">
+  <img src="pic 7.jpg" alt="Image 3" class="gallery-img">
+  <img src="pic 8.jpg" alt="Image 3" class="gallery-img">
+  <img src="pic 9.jpg" alt="Image 3" class="gallery-img">
+</div>
+
+<div class="full-img" id="fullImgBox">
+  <img id="fullImg">
+  <span onclick="closeFullImg()">&times;</span>
+  <div class="lightbox-controls">
+    <button onclick="prevImg()"><</button>
+    <button onclick="nextImg()">></button>
+  </div>
+</div>
+
+
+<script src="nevigation.js"></script>
+
+</body>
+</html>
